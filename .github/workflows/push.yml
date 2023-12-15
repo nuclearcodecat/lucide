@@ -1,0 +1,30 @@
+name: Linting
+
+on:
+  push:
+    branches:
+      - test-env-action
+
+jobs:
+  lint-contributors:
+    if: github.repository == 'lucide-icons/lucide'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+      - run: node ./scripts/updateContributors.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FETCH_DEPTH: ${{ github.event.pull_request.commits }}
+          CHANGED_FILES: 'testttttt'
+
