@@ -1,7 +1,15 @@
 {
   "$schema": "../icon.schema.json",
-  "contributors": ["ericfennis"],
-  "tags": ["hand"],
-  "categories": ["cursors", "design", "layout"],
-  "aliases": ["grab"]
+  "contributors": [
+    "ericfennis"
+  ],
+  "tags": [
+    "hand"
+  ],
+  "categories": [
+    "cursors", "design", "layout"
+  ],
+  "aliases": [
+    "grab"
+  ]
 }

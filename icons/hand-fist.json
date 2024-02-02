@@ -1,6 +1,9 @@
 {
   "$schema": "../icon.schema.json",
-  "contributors": ["karsa-mistmere", "ericfennis"],
+  "contributors": [
+    "karsa-mistmere",
+    "ericfennis"
+  ],
   "tags": [
     "clench",
     "strength",
@@ -15,5 +18,10 @@
     "combat",
     "brawl"
   ],
-  "categories": ["social", "emoji", "communication", "sports"]
+  "categories": [
+    "social",
+    "emoji",
+    "communication",
+    "sports"
+  ]
 }
