@@ -43,7 +43,7 @@ bun add lucide-static
 
 ```html
 <!-- SVG file for a single icon -->
-<img src="https://unpkg.com/lucide-static@latest/icons/home.svg" />
+<img src="https://unpkg.com/lucide-static@latest/icons/house.svg" />
 
 <!-- Icon font -->
 <style>
@@ -66,12 +66,12 @@ To use it in for example html:
 
 ```html
 <!-- SVG file for a single icon -->
-<img src="~lucide-static/icons/home.svg" />
+<img src="~lucide-static/icons/house.svg" />
 ```
 
 ```css
 .home-icon {
-  background-image: url(~lucide-static/icons/home.svg);
+  background-image: url(~lucide-static/icons/house.svg);
 }
 ```
 
